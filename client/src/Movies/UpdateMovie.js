@@ -47,7 +47,8 @@ const UpdateMovie = props => {
                   }
               })
           ])
-          history.push(`/movies/${id}`);
+          setMovie(initialMovie)
+          history.push("/");
           console.log(movie)
         })
         .catch((err) => console.error(err.message));
